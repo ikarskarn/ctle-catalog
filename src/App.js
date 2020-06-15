@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Catalog from './Catalog.js'
+import CategoryButtons from './CategoryButtons.js'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<header className='catalog-header'>
+				<h1>Center for Teaching and Learning Excellence</h1>
+				<h2>Catalog</h2>
+			</header>
+			<main className='App'>
+				<CategoryButtons />
+				<Catalog />
+			</main>
+		</div>
+	);
 }
 
 export default App;
